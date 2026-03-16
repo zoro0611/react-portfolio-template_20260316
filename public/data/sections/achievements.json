@@ -7,23 +7,11 @@
                 "title_long_prefix": "Here are my",
                 "title_long": "Career {{Achievements}}"
             },
-            "es": {
-                "title_short": "Logros",
-                "title_short_nav": "Logros",
-                "title_long_prefix": "Aquí están mis",
-                "title_long": "{{Logros}} Profesionales"
-            },
-            "fr": {
-                "title_short": "Réalis",
-                "title_short_nav": "Réalisations",
-                "title_long_prefix": "Voici",
-                "title_long": "Mes {{Réalisations}}"
-            },
-            "ko": {
-                "title_short": "경력 성과",
-                "title_short_nav": "경력 성과",
-                "title_long_prefix": "다음은",
-                "title_long": "{{경력 성과}}입니다"
+            "zh": {
+                "title_short": "獎項",
+                "title_short_nav": "成就",
+                "title_long_prefix": "以下是我的",
+                "title_long": "職業{{成就}}"
             }
         }
     },
@@ -34,9 +22,7 @@
             "component": "ArticleCards",
             "locales": {
                 "en": { "title": "Certifications" },
-                "es": { "title": "Certificaciones" },
-                "fr": { "title": "Certifications" },
-                "ko": { "title": "인증서" }
+                "zh": { "title": "認證" }
             },
             "settings": {
                 "order_items_by": "id",
@@ -55,14 +41,9 @@
                             "title": "The {{Linux Foundation}}",
                             "text": "Certified Kubernetes Administrator (CKA)"
                         },
-                        "es": {
-                            "text": "Administrador de Kubernetes Certificado (CKA)"
-                        },
-                        "fr": {
-                            "text": "Administrateur Kubernetes Certifié (CKA)"
-                        },
-                        "ko": {
-                            "text": "Kubernetes 인증 관리자 (CKA)"
+                        "zh": {
+                            "title": "{{Linux Foundation}}",
+                            "text": "Kubernetes 認證管理員 (CKA)"
                         }
                     }
                 },
@@ -79,14 +60,9 @@
                             "title": "{{Amazon}} Web Services",
                             "text": "AWS Certified Solutions Architect – Associate"
                         },
-                        "es": {
-                            "text": "Arquitecto de Soluciones Certificado por AWS - Asociado"
-                        },
-                        "fr": {
-                            "text": "Architecte de Solutions Certifié AWS - Associé"
-                        },
-                        "ko": {
-                            "text": "AWS 공인 솔루션 아키텍트 - 준회원"
+                        "zh": {
+                            "title": "{{Amazon}} 網路服務",
+                            "text": "AWS 認證解決方案架構師 – 助理級"
                         }
                     }
                 },
@@ -103,14 +79,9 @@
                             "title": "{{Oracle}}",
                             "text": "Certified Java Developer"
                         },
-                        "es": {
-                            "text": "Desarrollador Java Certificado"
-                        },
-                        "fr": {
-                            "text": "Développeur Java Certifié"
-                        },
-                        "ko": {
-                            "text": "공인 자바 개발자"
+                        "zh": {
+                            "title": "{{Oracle}}",
+                            "text": "Java 認證開發人員"
                         }
                     }
                 },
@@ -127,14 +98,9 @@
                             "title": "{{MongoDB}} University",
                             "text": "MongoDB Certified Developer"
                         },
-                        "es": {
-                            "text": "Desarrollador Certificado de MongoDB"
-                        },
-                        "fr": {
-                            "text": "Développeur Certifié MongoDB"
-                        },
-                        "ko": {
-                            "text": "MongoDB 공인 개발자"
+                        "zh": {
+                            "title": "{{MongoDB}} 大學",
+                            "text": "MongoDB 認證開發人員"
                         }
                     }
                 }
@@ -146,9 +112,7 @@
             "component": "ArticleThread",
             "locales": {
                 "en": { "title": "Awards" },
-                "es": { "title": "Premios" },
-                "fr": { "title": "Récompenses" },
-                "ko": { "title": "수상 내역" }
+                "zh": { "title": "獎項" }
             },
             "settings": {
                 "max_rows_collapse_threshold": 4,
@@ -175,26 +139,12 @@
                             "institution": "MIT",
                             "text": "Awarded for outstanding performance in optimizing backend systems during my final year project where I improved the efficiency of data processing by 30%. I have also received a certificate of recognition for this achievement."
                         },
-                        "es": {
-                            "title": "{{Mejor Proyecto de Fin de Carrera}} – Optimización Backend",
-                            "province": "Massachusetts",
-                            "country": "EE.UU.",
-                            "institution": "MIT",
-                            "text": "Premiado por un rendimiento excepcional en la optimización de sistemas backend durante mi proyecto de fin de carrera, donde mejoré la eficiencia del procesamiento de datos en un 30%. También he recibido un certificado de reconocimiento por este logro."
-                        },
-                        "fr": {
-                            "title": "{{Meilleur Projet de Fin d'Études}} – Optimisation Backend",
-                            "province": "Massachusetts",
-                            "country": "États-Unis",
-                            "institution": "MIT",
-                            "text": "Récompensé pour une performance exceptionnelle dans l'optimisation des systèmes backend lors de mon projet de fin d'études, où j'ai amélioré l'efficacité du traitement des données de 30%. J'ai également reçu un certificat de reconnaissance pour cette réalisation."
-                        },
-                        "ko": {
-                            "title": "{{최우수 졸업 프로젝트}} – 백엔드 최적화",
-                            "province": "매사추세츠",
-                            "country": "미국",
-                            "institution": "MIT",
-                            "text": "졸업 프로젝트에서 백엔드 시스템 최적화로 뛰어난 성과를 인정받아 수상하였으며, 데이터 처리 효율을 30% 향상시켰습니다. 이 성과에 대한 인증서도 받았습니다."
+                        "zh": {
+                            "title": "{{最佳畢業專題}} – 後端優化",
+                            "province": "麻薩諸塞州",
+                            "country": "美國",
+                            "institution": "麻省理工學院",
+                            "text": "在我的畢業專題中，因為優化後端系統的出色表現而獲獎，我將數據處理效率提高了30%。我也因此成就獲得了一張認可證書。"
                         }
                     }
                 },
@@ -224,40 +174,16 @@
                                 "Contributing to the documentation and community support"
                             ]
                         },
-                        "es": {
-                            "title": "{{Contribuyente Destacado}} – Proyecto de Código Abierto de la Fundación Linux",
+                        "zh": {
+                            "title": "{{頂尖貢獻者}} – Linux Foundation 開源專案",
                             "province": "",
                             "country": "",
-                            "institution": "Fundación Linux",
-                            "text": "Reconocido como un contribuyente destacado por mis contribuciones significativas a un proyecto de código abierto bajo la Fundación Linux, donde implementé características clave y resolví errores críticos, mejorando la estabilidad y el rendimiento del proyecto. Mis contribuciones incluyeron: ",
+                            "institution": "Linux Foundation",
+                            "text": "因為我對 Linux Foundation 旗下的一個開源專案做出了重大貢獻而被認可為頂尖貢獻者，我實現了關鍵功能並解決了重要的錯誤，提升了專案的穩定性和性能。我的貢獻包括: ",
                             "list": [
-                                "Implementación de una nueva característica que mejoró la experiencia del usuario en un 25%",
-                                "Resolución de más de 50 errores críticos que mejoraron la fiabilidad del sistema",
-                                "Contribución a la documentación y soporte comunitario"
-                            ]
-                        },
-                        "fr": {
-                            "title": "{{Contributeur Principal}} – Projet Open Source de la Fondation Linux",
-                            "province": "",
-                            "country": "",
-                            "institution": "Fondation Linux",
-                            "text": "Reconnu comme un contributeur principal pour mes contributions significatives à un projet open source sous la Fondation Linux, où j'ai implémenté des fonctionnalités clés et résolu des bugs critiques, améliorant la stabilité et les performances du projet. Mes contributions ont inclus : ",
-                            "list": [
-                                "Implémentation d'une nouvelle fonctionnalité qui a amélioré l'expérience utilisateur de 25%",
-                                "Résolution de plus de 50 bugs critiques qui ont amélioré la fiabilité du système",
-                                "Contribution à la documentation et au support communautaire"
-                            ]
-                        },
-                        "ko": {
-                            "title": "{{최고 기여자}} – 오픈 소스 리눅스 재단 프로젝트",
-                            "province": "",
-                            "country": "",
-                            "institution": "리눅스 재단",
-                            "text": "리눅스 재단의 오픈 소스 프로젝트에 대한 중요한 기여로 최고 기여자로 인정받았으며, 주요 기능을 구현하고 중요한 버그를 해결하여 프로젝트의 안정성과 성능을 향상시켰습니다. 제 기여 내용은 다음과 같습니다: ",
-                            "list": [
-                                "사용자 경험을 25% 향상시킨 새로운 기능 구현",
-                                "시스템 신뢰성을 향상시킨 50개 이상의 중요한 버그 해결",
-                                "문서화 및 커뮤니티 지원에 기여"
+                                "實現了一個新功能，提升了25%的用戶體驗",
+                                "解決了50多個關鍵錯誤，增強了系統的可靠性",
+                                "對文檔和社區支持做出了貢獻"
                             ]
                         }
                     }
@@ -284,26 +210,12 @@
                             "institution": "IEEE",
                             "text": "Awarded for my research paper on software optimization techniques, which was presented at the International Conference on Software Engineering. The paper received positive feedback from industry experts and was published in the conference proceedings."
                         },
-                        "es": {
-                            "title": "{{Mejor Artículo}} – Cumbre Internacional",
-                            "province": "Pekín",
-                            "country": "China",
+                        "zh": {
+                            "title": "{{最佳論文}} – 國際峰會",
+                            "province": "北京",
+                            "country": "中國",
                             "institution": "IEEE",
-                            "text": "Premiado por mi artículo de investigación sobre técnicas de optimización de software, que fue presentado en la Conferencia Internacional sobre Ingeniería de Software. El artículo recibió comentarios positivos de expertos de la industria y fue publicado en las actas de la conferencia."
-                        },
-                        "fr": {
-                            "title": "{{Meilleur Article}} – Sommet International",
-                            "province": "Pékin",
-                            "country": "Chine",
-                            "institution": "IEEE",
-                            "text": "Récompensé pour mon article de recherche sur les techniques d'optimisation logicielle, qui a été présenté à la Conférence Internationale sur l'Ingénierie Logicielle. L'article a reçu des commentaires positifs d'experts du secteur et a été publié dans les actes de la conférence."
-                        },
-                        "ko": {
-                            "title": "{{최우수 논문}} – 국제 정상 회담",
-                            "province": "베이징",
-                            "country": "중국",
-                            "institution": "IEEE",
-                            "text": "소프트웨어 최적화 기술에 관한 연구 논문으로 국제 소프트웨어 공학 회의에서 발표하여 수상하였으며, 이 논문은 업계 전문가들로부터 긍정적인 피드백을 받았고 회의록에 게재되었습니다."
+                            "text": "因為我在軟件優化技術方面的研究論文而獲獎，該論文在國際軟件工程會議上發表。該論文得到了業界專家的積極反饋，並被收錄在會議論文集中。"
                         }
                     }
                 },
@@ -339,40 +251,16 @@
                                 "Integration with popular data visualization tools"
                             ]
                         },
-                        "es": {
-                            "title": "{{Mejor Innovador}} – Cumbre de Innovación Tecnológica",
-                            "province": "Río de Janeiro",
-                            "country": "Brasil",
-                            "institution": "Innovadores Tecnológicos Brasil",
-                            "text": "Reconocido como el [[mejor innovador]] por mi trabajo innovador en el desarrollo de una nueva herramienta de software que mejoró significativamente los procesos de análisis de datos. La herramienta fue adoptada por varias empresas líderes en la industria, y recibí un certificado de reconocimiento por mis contribuciones. Mi herramienta presentó las siguientes innovaciones: ",
+                        "zh": {
+                            "title": "{{最佳創新者}} – 科技創新峰會",
+                            "province": "里約熱內盧",
+                            "country": "巴西",
+                            "institution": "Tech Innovators Brazil",
+                            "text": "因為我在開發一個新的軟件工具方面的突破性工作而被認可為最佳創新者，該工具顯著改善了數據分析過程。該工具被業界的幾家領先公司採用，我也因此成就獲得了一張認可證書。我的工具具有以下創新功能: ",
                             "list": [
-                                "Capacidades de procesamiento de datos en tiempo real",
-                                "Interfaz fácil de usar que redujo el tiempo de capacitación en un 50%",
-                                "Integración con herramientas populares de visualización de datos"
-                            ]
-                        },
-                        "fr": {
-                            "title": "{{Meilleur Innovateur}} – Sommet de l'Innovation Technologique",
-                            "province": "Rio de Janeiro",
-                            "country": "Brésil",
-                            "institution": "Innovateurs Technologiques Brésil",
-                            "text": "Reconnu comme le [[meilleur innovateur]] pour mon travail révolutionnaire dans le développement d'un nouvel outil logiciel qui a considérablement amélioré les processus d'analyse de données. L'outil a été adopté par plusieurs entreprises leaders du secteur, et j'ai reçu un certificat de reconnaissance pour mes contributions. Mon outil présentait les innovations suivantes : ",
-                            "list": [
-                                "Capacités de traitement des données en temps réel",
-                                "Interface conviviale qui a réduit le temps de formation de 50%",
-                                "Intégration avec des outils populaires de visualisation des données"
-                            ]
-                        },
-                        "ko": {
-                            "title": "{{최고 혁신가}} – 기술 혁신 정상 회담",
-                            "province": "리우데자네이루",
-                            "country": "브라질",
-                            "institution": "브라질 기술 혁신가",
-                            "text": "데이터 분석 프로세스를 크게 개선하는 새로운 소프트웨어 도구 개발에서 획기적인 작업으로 최고의 혁신가로 인정받았습니다. 이 도구는 업계의 여러 선도 기업에서 채택되었으며, 제 기여에 대한 인증서를 받았습니다. 제 도구는 다음과 같은 혁신을 특징으로 하였습니다: ",
-                            "list": [
-                                "실시간 데이터 처리 기능",
-                                "교육 시간을 50% 단축시킨 사용자 친화적인 인터페이스",
-                                "인기 있는 데이터 시각화 도구와의 통합"
+                                "實時數據處理能力",
+                                "用戶友好的界面，將培訓時間減少了50%",
+                                "與流行的數據可視化工具集成"
                             ]
                         }
                     }

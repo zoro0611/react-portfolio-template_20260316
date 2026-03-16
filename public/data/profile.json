@@ -1,7 +1,7 @@
 {
-    "name": "Mark Choi",
+    "name": "Leo Hsu",
 
-    "profilePictureUrl": "images/pictures/profile-picture.jpg",
+    "profilePictureUrl": "images/pictures/profile-picture2.jpg",
     "resumePdfUrl": "",
 
     "statusCircleVisible": true,
@@ -10,48 +10,28 @@
 
     "locales": {
         "en": {
-            "localized_name": "Mark Choi",
-            "localized_name_stylized": " [[Mark {{Choi}}]]",
+            "localized_name": "Leo Hsu",
+            "localized_name_stylized": " [[Leo {{Hsu}}]]",
             "status_message_available_for_freelance": "Available for freelance!",
             "roles": [
+                "PowerApps Developer",
                 "Backend Developer",
-                "Frontend Developer",
-                "DevOps Engineer",
-                "UX Designer"
+                "English Communicator"
             ],
             "name_pronunciation_ipa": "/mark chwe/",
             "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
         },
-        "es": {
-            "status_message_available_for_freelance": "¡Disponible para freelance!",
+        "zh": {
+            "localized_name": "許皓宸",
+            "localized_name_stylized": " [[許皓宸]]",
+            "status_message_available_for_freelance": "目前有接案空檔！",
             "roles": [
-                "Desarrollador Backend",
-                "Desarrollador Frontend",
-                "Ingeniero DevOps",
-                "Diseñador UX"
-            ]
-        },
-        "fr": {
-            "status_message_available_for_freelance": "Disponible pour freelance !",
-            "roles": [
-                "Développeur Backend",
-                "Développeur Frontend",
-                "Ingénieur DevOps",
-                "Designer UX"
-            ]
-        },
-        "ko": {
-            "localized_name": "최민석",
-            "localized_name_stylized": "{{최}}민석",
-            "status_message_available_for_freelance": "프리랜스 가능합니다!",
-            "roles": [
-                "백엔드 개발자",
-                "프론트엔드 개발자",
-                "데브옵스 엔지니어",
-                "UX 디자이너"
+                "PowerApps 開發者",
+                "後端開發者",
+                "英文溝通者"
             ],
-            "name_pronunciation_ipa": "/chwe min-seok/",
-            "name_pronunciation_audio_url": "audio/korean-name-pronunciation.mp3"
+            "name_pronunciation_ipa": "/leo hsu/",
+            "name_pronunciation_audio_url": "audio/chinese-name-pronunciation.mp3"
         }
     }
 }
