@@ -55,7 +55,7 @@
             "dark": false,
             "locales": {
                 "en": {"name": "Light Mode"},
-                "zh": {"name": "亮模式"}
+                "zh": {"name": "明亮模式"}
             }
         }
     ],

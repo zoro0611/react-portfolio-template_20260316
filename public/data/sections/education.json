@@ -7,23 +7,11 @@
                 "title_long_prefix": "This is my",
                 "title_long": "{{Education}} Background"
             },
-            "es": {
-                "title_short": "Educación",
-                "title_short_nav": "Educación",
-                "title_long_prefix": "Esta es mi",
-                "title_long": "{{Formación}} Educativa"
-            },
-            "fr": {
-                "title_short": "Éducation",
-                "title_short_nav": "Éducation",
-                "title_long_prefix": "C'est mon",
-                "title_long": "{{Contexte}} Éducatif"
-            },
-            "ko": {
-                "title_short": "교육",
-                "title_short_nav": "교육",
-                "title_long_prefix": "이것은 내",
-                "title_long": "{{교육적}} 배경"
+            "zh": {
+                "title_short": "教育",
+                "title_short_nav": "教育",
+                "title_long_prefix": "這是我的",
+                "title_long": "{{教育}} 背景"
             }
         }
     },
@@ -55,29 +43,14 @@
                             "list": [],
                             "tags": []
                         },
-                        "es": {
-                            "title": "Desarrollo en PHP {{Nanodegree}}",
+                        "zh": {
+                            "title": "C# 開發 {{Build School}}",
                             "province": "",
-                            "country": "Remoto",
-                            "institution": "Udacity",
-                            "text": "Completé con éxito un programa intensivo de Nanodegree con un fuerte enfoque en [[PHP development]], donde adquirí una experiencia práctica y completa en la creación de aplicaciones web dinámicas y escalables.",
-                            "list": []
-                        },
-                        "fr": {
-                            "title": "Développement PHP {{Nanodegree}}",
-                            "province": "",
-                            "country": "À distance",
-                            "institution": "Udacity",
-                            "text": "J'ai terminé avec succès un programme Nanodegree intensif axé sur [[PHP development]], au cours duquel j'ai acquis une expérience pratique approfondie dans la création d'applications web dynamiques et évolutives.",
-                            "list": []
-                        },
-                        "ko": {
-                            "title": "PHP 개발 {{Nanodegree}}",
-                            "province": "",
-                            "country": "원격",
-                            "institution": "Udacity",
-                            "text": "[[PHP development]]에 중점을 둔 집중형 나노디그리 프로그램을 성공적으로 수료했으며, 동적이고 확장 가능한 웹 애플리케이션을 구축하는 데 있어 폭넓고 실용적인 경험을 쌓았습니다.",
-                            "list": []
+                            "country": "",
+                            "institution": "Build School",
+                            "text": "成功完成了一個强化的全端課程，重点是 [[C# 開發]]，在建構動態和可擴展的網絡應用程序方面獲得了全面的實踐經驗。",
+                            "list": [],
+                            "tags": []
                         }
                     }
                 },
@@ -98,30 +71,12 @@
                             "list": [],
                             "tags": []
                         },
-                        "es": {
-                            "title": "{{Grado}} en Administración de Empresas",
-                            "province": "South Carolina",
-                            "country": "Estados Unidos",
+                        "zh": {
+                            "title": "{{學士}} 商業管理",
+                            "province": "南卡羅來納州",
+                            "country": "美國",
                             "institution": "The Citadel",
-                            "text": "Obtuve un [[grado en Administración de Empresas]], con enfoque en gestión, marketing y finanzas. Adquirí experiencia práctica a través de diversos proyectos empresariales, estudios de caso y actividades colaborativas en equipo.",
-                            "list": [],
-                            "tags": []
-                        },
-                        "fr": {
-                            "title": "{{Licence}} en Administration des Affaires",
-                            "province": "Caroline du Sud",
-                            "country": "États-Unis",
-                            "institution": "The Citadel",
-                            "text": "J'ai obtenu une [[licence en administration des affaires]], axée sur la gestion, le marketing et la finance. J'ai acquis une expérience pratique grâce à divers projets commerciaux, études de cas et activités collaboratives en équipe.",
-                            "list": [],
-                            "tags": []
-                        },
-                        "ko": {
-                            "title": "{{학사}} 경영학",
-                            "province": "사우스캐롤라이나",
-                            "country": "미국",
-                            "institution": "The Citadel",
-                            "text": "경영학 학사 학위를 취득했으며, 경영, 마케팅 및 재무에 중점을 두었습니다. 다양한 비즈니스 프로젝트, 사례 연구 및 협업 팀 기반 활동을 통해 실무 경험을 쌓았습니다.",
+                            "text": "獲得了 [[商業管理學士學位]]，專注於管理、行銷和財務。通過各種商業項目、案例研究和協作團隊活動獲得了實踐經驗。",
                             "list": [],
                             "tags": []
                         }

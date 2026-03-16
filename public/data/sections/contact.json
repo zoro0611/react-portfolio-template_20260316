@@ -7,23 +7,11 @@
                 "title_long_prefix": "Don't hesitate to",
                 "title_long": "{{Contact}} Me"
             },
-            "es": {
-                "title_short": "Contacto",
-                "title_short_nav": "Contacto",
-                "title_long_prefix": "No dudes en",
-                "title_long": "{{Contácta}}me"
-            },
-            "fr": {
-                "title_short": "Contact",
-                "title_short_nav": "Contact",
-                "title_long_prefix": "N'hésitez pas à",
-                "title_long": "Me {{Contacter}}"
-            },
-            "ko": {
-                "title_short": "연락처",
-                "title_short_nav": "연락처",
-                "title_long_prefix": "주저하지 말고",
-                "title_long": "{{연락}} 주세요"
+            "zh": {
+                "title_short": "聯絡",
+                "title_short_nav": "聯絡",
+                "title_long_prefix": "歡迎",
+                "title_long": "{{聯絡}}我"
             }
         }
     },
@@ -44,24 +32,13 @@
                     "contact_thank_you_footer": "The reply will be sent to your email address: {{$email}}",
                     "title": "Send me a {{message}}"
                 },
-                "es": {
-                    "contact_thank_you_title": "{{Gracias}} por el contacto!",
-                    "contact_thank_you_body": "Tu mensaje ha sido recibido, y me pondré en contacto contigo pronto. Aprecio tu tiempo y espero conectarme contigo.",
-                    "contact_thank_you_footer": "La respuesta se enviará a tu dirección de correo electrónico: {{$email}}",
-                    "title": "Envíame un {{mensaje}}"
-                },
-                "fr": {
-                    "contact_thank_you_title": "{{Merci}} pour le contact!",
-                    "contact_thank_you_body": "Votre message a été reçu, et je vous contacterai bientôt. J'apprécie votre temps et j'ai hâte de me connecter avec vous!",
-                    "contact_thank_you_footer": "La réponse sera envoyée à votre adresse e-mail: {{$email}}",
-                    "title": "Envoyez-moi un {{message}}"
-                },
-                "ko": {
-                    "contact_thank_you_title": "{{감사합니다}}!",
-                    "contact_thank_you_body": "귀하의 메시지를 받았으며 곧 연락드리겠습니다. 귀하의 시간에 감사드리며 연결되기를 기대합니다!",
-                    "contact_thank_you_footer": "답변은 귀하의 이메일 주소 {{$email}}로 전송됩니다.",
-                    "title": "{{메시지를}} 보내주세요"
+                "zh": {
+                    "contact_thank_you_title": "感謝您的聯絡！",
+                    "contact_thank_you_body": "您的訊息已經收到，我會盡快與您聯繫。非常感謝您的時間，期待與您交流！",
+                    "contact_thank_you_footer": "回覆將會寄送到您的電子郵件地址：{{$email}}",
+                    "title": "給我{{留言}}吧"
                 }
+
             },
             "items": null
         },
@@ -75,9 +52,7 @@
             },
             "locales": {
                 "en": {"title": "Or if you {{prefer}}..."},
-                "es": {"title": "O si {{prefieres}}..."},
-                "fr": {"title": "Ou si vous {{préférez}}..."},
-                "ko": {"title": "또는 {{원하시면}}..."}
+                "zh": {"title": "或者，如果您{{比較喜歡}}..."}
             },
             "items": [
                 {
@@ -89,9 +64,7 @@
                     "copyToClipboardButton": true,
                     "locales": {
                         "en": {"title": "Phone"},
-                        "es": {"title": "Teléfono"},
-                        "fr": {"title": "Téléphone"},
-                        "ko": {"title": "전화"}
+                        "zh": {"title": "電話"}
                     }
                 },
                 {
@@ -103,7 +76,7 @@
                     "copyToClipboardButton": true,
                     "locales": {
                         "en": {"title": "E-mail"},
-                        "ko": {"title": "이메일"}
+                        "zh": {"title": "電子郵件"}
                     }
                 },
                 {
@@ -115,7 +88,7 @@
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {"title": "LinkedIn"},
-                        "ko": {"title": "링크드인"}
+                        "zh": {"title": "領英"}
                     }
                 }
             ]
