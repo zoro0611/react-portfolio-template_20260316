@@ -65,6 +65,13 @@ function ArticleContactFormContent({ dataWrapper, selectedItemCategoryId, setSho
     const windowStatus = utils.storage.getWindowVariable(id)
 
     const [fieldsBundle, setFieldsBundle] = useState(null)
+    /*
+    const [fieldsBundle, setFieldsBundle] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    })*/
     const [validationError, setValidationError] = useState(null)
     const [status, setStatus] = useState(windowStatus || ArticleContactForm.Status.WAITING_FOR_SUBMISSION)
 
@@ -125,8 +132,9 @@ function ArticleContactFormContent({ dataWrapper, selectedItemCategoryId, setSho
         setStatus(ArticleContactForm.Status.SUBMITTING)
         feedbacks.setActivitySpinnerVisible(true, dataWrapper.uniqueId, language.getString("sending_message"))
 
+        /*
+        // 原始範本的 EmailJS 寄信流程
         const fakeEmailRequests = utils.storage.getWindowVariable("fakeEmailRequests") || false
-
         let apiResponse
         if(!fakeEmailRequests) {
             apiResponse = await api.handlers.sendEmailRequest(
@@ -138,8 +146,20 @@ function ArticleContactFormContent({ dataWrapper, selectedItemCategoryId, setSho
         }
         else {
             apiResponse = await api.handlers.dummyRequest()
-        }
+        }*/
 
+        //n8n Webhook 的 URL，請替換成自己的 n8n Webhook URL
+        const n8nWebhookUrl = "https://mangoisyellow-n8n-free.hf.space/webhook/3eee3ecb-6c8c-40c8-8324-dea604d6d3e5";
+
+        let apiResponse;
+        
+        // 調用剛剛在 api.js 寫好的 n8n 處理器
+        apiResponse = await api.handlers.sendToN8n(
+            apiValidation.bundle, 
+            n8nWebhookUrl
+        );
+
+        //共通的回傳處理
         feedbacks.setActivitySpinnerVisible(false, dataWrapper.uniqueId)
         _onApiResponse(apiResponse?.success)
 
@@ -205,7 +225,7 @@ function ArticleContactFormContentFields({ onInput, didSubmit }) {
 
     useEffect(() => {
         onInput({name, email, subject, message})
-    }, [null, name, email, subject, message])
+    }, [name, email, subject, message])
 
     useEffect(() => {
         if(!didSubmit) {

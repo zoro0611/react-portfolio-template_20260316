@@ -88,6 +88,33 @@ const handlers = {
         }
 
         return response
+    },
+
+    /**
+     * 送出資料到 n8n Webhook
+     * @param {Object} validationBundle 
+     * @param {String} webhookUrl n8n 的 Webhook URL
+     */
+    sendToN8n: async (validationBundle, webhookUrl) => {
+        const response = { success: false };
+
+        try {
+            const result = await fetch(webhookUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(validationBundle)
+            });
+
+            // n8n 成功接收通常會回傳 200 OK
+            response.success = result.ok;
+        } catch (error) {
+            console.error("n8n Webhook Error:", error);
+            response.success = false;
+        }
+
+        return response;
     }
 }
 

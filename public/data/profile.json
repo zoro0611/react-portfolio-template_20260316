@@ -6,13 +6,13 @@
 
     "statusCircleVisible": true,
     "statusCircleVariant": "available",
-    "statusCircleHoverMessage": "status_message_available_for_freelance",
+    "statusCircleHoverMessage": "status_message_available_for_job",
 
     "locales": {
         "en": {
             "localized_name": "Leo Hsu",
             "localized_name_stylized": " [[Leo {{Hsu}}]]",
-            "status_message_available_for_freelance": "Available for freelance!",
+            "status_message_available_for_job": "Available for new opportunity",
             "roles": [
                 "PowerApps Developer",
                 "Backend Developer",
@@ -24,7 +24,7 @@
         "zh": {
             "localized_name": "許皓宸",
             "localized_name_stylized": " [[許皓宸]]",
-            "status_message_available_for_freelance": "目前有接案空檔！",
+            "status_message_available_for_job": "目前有接案空檔！",
             "roles": [
                 "PowerApps 開發者",
                 "後端開發者",

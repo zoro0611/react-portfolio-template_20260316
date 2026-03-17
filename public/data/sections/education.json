@@ -8,10 +8,10 @@
                 "title_long": "{{Education}} Background"
             },
             "zh": {
-                "title_short": "教育",
-                "title_short_nav": "教育",
+                "title_short": "學歷",
+                "title_short_nav": "學歷",
                 "title_long_prefix": "這是我的",
-                "title_long": "{{教育}} 背景"
+                "title_long": "{{學歷}} 背景"
             }
         }
     },
