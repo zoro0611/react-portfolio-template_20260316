@@ -20,23 +20,45 @@ export const useApi = () => {
 }
 
 const validators = {
-    /**
+     /**
+
      * @param {String} name
+
      * @param {String} email
+
      * @param {String} subject
+
      * @param {String} message
+
      */
     validateEmailRequest: (name, email, subject, message) => {
-        const minWordCountForMessage = 3
+        // 定義最小字元長度 (中英文通用)
+        // 建議設為 5，因為 "你好嗎" 太短，"我想詢問" 剛好 4 個字
+        const minCharLength = 5; 
 
         const validations = [
-            { errorCode: constants.ErrorCodes.VALIDATION_EMPTY_FIELDS,      errorCondition: !name || !email || !subject || !message },
-            { errorCode: constants.ErrorCodes.VALIDATION_EMAIL,             errorCondition: !utils.validation.validateEmail(email) },
-            { errorCode: constants.ErrorCodes.VALIDATION_MESSAGE_LENGTH,    errorCondition: !utils.validation.isLongerThan(message, minWordCountForMessage),    messageParameter: minWordCountForMessage + 1},
-            { errorCode: constants.ErrorCodes.VALIDATION_MESSAGE_SPAM,      errorCondition: utils.validation.isSpam(message) },
+            { 
+                errorCode: constants.ErrorCodes.VALIDATION_EMPTY_FIELDS, 
+                errorCondition: !name?.trim() || !email?.trim() || !subject?.trim() || !message?.trim() 
+            },
+            { 
+                errorCode: constants.ErrorCodes.VALIDATION_EMAIL, 
+                errorCondition: !utils.validation.validateEmail(email) 
+            },
+            { 
+                // 修改這裡：改用長度判斷，並確保移除前後空白
+                errorCode: constants.ErrorCodes.VALIDATION_MESSAGE_LENGTH, 
+                errorCondition: (message?.trim().length || 0) < minCharLength, 
+                messageParameter: minCharLength 
+            },
+            { 
+                errorCode: constants.ErrorCodes.VALIDATION_MESSAGE_SPAM, 
+                errorCondition: utils.validation.isSpam(message) 
+            },
         ]
 
         const error = validations.find(validation => validation.errorCondition)
+        
         return {
             success: !error,
             errorCode: error?.errorCode,
