@@ -28,7 +28,7 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "images/pictures/timeline-place-udacity.png",
+                    "img": "images/pictures/timeline-place-build-school.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "dateStart": {"year": 2022, "month": 4},
@@ -36,8 +36,8 @@
                     "locales": {
                         "en": {
                             "title": "C# Development {{Build School}}",
-                            "province": "",
-                            "country": "",
+                            "province": "Taipei",
+                            "country": "Taiwan",
                             "institution": "Build School",
                             "text": "Successfully completed an intensive full-stack program with a strong emphasis on [[C# development]], where I gained comprehensive, hands-on experience in building dynamic and scalable web applications.",
                             "list": [],
@@ -48,7 +48,7 @@
                             "province": "",
                             "country": "",
                             "institution": "Build School",
-                            "text": "成功完成了一個强化的全端課程，重点是 [[C# 開發]]，在建構動態和可擴展的網絡應用程序方面獲得了全面的實踐經驗。",
+                            "text": "成功完成了一個强化的全端課程，重點是 [[C# 開發]]，在建構動態和可擴展的網絡應用程序方面獲得了全面的實踐經驗。",
                             "list": [],
                             "tags": []
                         }
@@ -56,7 +56,7 @@
                 },
                 {
                     "id": 2,
-                    "img": "images/pictures/timeline-place-mit.png",
+                    "img": "images/pictures/timeline-place-citadel.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "dateStart": {"year": 2009, "month": 8},

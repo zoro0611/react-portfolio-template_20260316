@@ -7,23 +7,11 @@
                 "title_long_prefix": "Take a look at my",
                 "title_long": "Recent {{Updates}}"
             },
-            "es": {
-                "title_short": "Vida Reciente",
-                "title_short_nav": "Actualizaciones",
-                "title_long_prefix": "Consulta mis",
-                "title_long": "Actualizaciones {{Recientes}}"
-            },
-            "fr": {
-                "title_short": "Vie Récente",
-                "title_short_nav": "Mises à Jour",
-                "title_long_prefix": "Découvrez mes",
-                "title_long": "Dernières {{Mises à Jour}}"
-            },
-            "ko": {
-                "title_short": "최근의 삶",
-                "title_short_nav": "업데이트",
-                "title_long_prefix": "내 최근",
-                "title_long": "{{업데이트}}를 확인해 보세요"
+            "zh": {
+                "title_short": "最近的生活",
+                "title_short_nav": "更新",
+                "title_long_prefix": "看看我的",
+                "title_long": "最近的{{更新}}"
             }
         }
     },
