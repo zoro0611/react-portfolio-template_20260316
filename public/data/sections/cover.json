@@ -29,9 +29,9 @@
             "items": [
                 {
                     "id": 1,
-                    "label": "Taoyuan – Taiwan",
+                    "label": "Taipei – Taiwan",
                     "link": {"href": "", "tooltipString": ""},
-                    "faIcon": "pi pi-map-Leoer"
+                    "faIcon": "pi pi-map-marker"
                 },
                 {
                     "id": 2,
@@ -67,105 +67,17 @@
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "text": "<p>I’m a {{PHP}} developer with [[over a decade]] of experience, specializing in backend development with some frontend work as well. I also have hands-on experience with C++, C#, Go, and Python in production environments.</p><p>This diverse background gives me the flexibility to adapt to a wide range of project needs, whether it's building scalable APIs, optimizing system performance, or contributing to full-stack solutions.</p><p>I look forward to collaborating [[with you!]]</p>"
+                            "text": "<h3>IT Application Engineer</h3><p style='margin-bottom:15px;'>[[Experienced in developing enterprise applications, including {{RPA (Robotic Process Automation)}} solutions and {{Power Apps}} applications]]</p><h3>Professional Summary</h3><ul><li>A goal-oriented IT engineer with 5 years of experience in [[PM / Sales]] roles, with strong interpersonal and communication skills.</li><li>Hands-on experience in {{OEM manufacturing}} environments, collaborating across cultures and cross-functional teams.</li><li>Demonstrates solid {{communication}} and {{coordination}} skills, and able to work effectively in diverse team settings.</li></ul>"
                         },
                         "zh": {
-                            "text": "<p>我是一名{{PHP}}開發者，擁有[[十多年的]]經驗，專注於後端開發，同时也涉及一些前端工作。我還在生產環境中積累了C++、C#、Go和Python的實際經驗。</p><p>這種多樣化的背景使我能夠適應各種項目需求，無論是構建可擴展的API、優化系統性能還是參與全端解決方案。</p><p>期待與您[[合作！]]</p>"
+                            "text": "<h3>IT應用系統工程師</h3><p style='margin-bottom:15px;'><strong>累積多個{{自動化流程 (RPA)}}、{{Power Apps}}企業應用程式等等之開發經驗</strong></p><h3>專業摘要</h3><ul><li>一位目標導向的IT 工程師，具備 5 年 [[專案管理/業務]] 的人際溝通與軟實力。</li><li>在{{OEM 工廠}}中擁有豐富的跨文化與跨部門協作經驗。</li><li>具備 {{良好的溝通能力}} 與 {{協調能力}}，能在多元團隊中有效合作。</li></ul>"
                         }
                     }
                 }
             ]
         },
-
         {
             "id": 3,
-            "component": "ArticleTestimonials",
-            "locales": {
-                "en": {"title": "Client {{testimonials}}"},
-                "zh": {"title": "客户{{推薦}}"}
-            },
-            "settings": {
-                "order_items_by": "id",
-                "order_items_sort": "asc"
-            },
-            "items": [
-                {
-                    "id": 1,
-                    "label": "Anita Bath",
-                    "link": {"href": "https://linkedin.com", "tooltipString": "open_website"},
-                    "img": "images/pictures/testimonial-person-female-1.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "locales": {
-                        "en": {
-                            "title": "CEO at [[SalesForce]]",
-                            "text": "Working with Leo was a truly [[transformative experience]]. His outstanding programming skills and collaborative spirit not only elevated the quality of our project but also brought a renewed sense of motivation and purpose to us."
-                        },
-                        "zh": {
-                            "title": "SalesForce CEO",
-                            "text": "與Leo合作是一次真正的[[變革性體驗]]。他出色的程式技能和協作精神不僅提升了我們項目的質量，還為我們帶來了新的動力和目標感。"
-                        }
-                    }
-                },
-                {
-                    "id": 2,
-                    "label": "Lou Natic",
-                    "link": {"href": "https://github.com", "tooltipString": "open_website"},
-                    "img": "images/pictures/testimonial-person-male-1.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "locales": {
-                        "en": {
-                            "title": "Lead Developer at [[GitHub]]",
-                            "text": "Having Leo on our team was an invaluable asset. His [[deep programming insights and mentorship]] not only elevated our projects but also empowered us to tackle every challenge with confidence and creativity."
-                        },
-                        "zh": {
-                            "title": "GitHub 首席开发者",
-                            "text": "有Leo在我們的團隊中是一個無價的資產。他[[深厚的程式見解和指導]]不僅提升了我們的項目，還使我們能够以信心和創造力應對每一個挑戰。"
-                        }
-                    }
-                },
-                {
-                    "id": 3,
-                    "label": "Paige Turner",
-                    "link": {"href": "", "tooltipString": ""},
-                    "img": "images/pictures/testimonial-person-female-2.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "locales": {
-                        "en": {
-                            "title": "Managing Director at [[Dingga]]",
-                            "text": "Collaborating with Leo was a true [[game changer]] for our entire development process. His [[deep technical expertise]], creative problem-solving, and proactive mindset were absolutely invaluable."
-                        },
-                        "zh": {
-                            "title": "Dingga 董事总经理",
-                            "text": "与Leo合作对我们整个开发过程来说是一个真正的[[游戏规则改变者]]。他[[深厚的技术专长]]、创造性的问题解决能力和积极主动的心态绝对是无价的。"
-                        }
-                    }
-                },
-                {
-                    "id": 4,
-                    "label": "Chris P. Bacon",
-                    "link": {"href": "https://dribbble.com", "tooltipString": "open_website"},
-                    "img": "images/pictures/testimonial-person-male-2.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "locales": {
-                        "en": {
-                            "title": "Creative Director at [[Dribbble]]",
-                            "text": "Leo Hsu's [[attention to detail]] and his [[innovative thinking]] brought a fresh perspective to our whole design process! Simply amazing!"
-                        },
-                        "zh": {
-                            "title": "Dribbble 创意总监",
-                            "text": "Leo Hsu的[[对细节的关注]]和[[创新思维]]为我们整个设计过程带来了新的视角！简直太棒了！"
-                        }
-                    }
-                }
-            ]
-        },
-
-        {
-            "id": 4,
             "component": "ArticleInfoList",
             "settings": {
                 "order_items_by": "id",
@@ -178,42 +90,6 @@
             "items": [
                 {
                     "id": 1,
-                    "faIcon": "fa-solid fa-video",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "label": null,
-                    "link": {"href": null, "tooltipString": null},
-                    "copyToClipboardButton": false,
-                    "locales": {
-                        "en": {
-                            "title": "{{AI}} video editing",
-                            "text": "Learning to use AI tools to enhance my videos."
-                        },
-                        "zh": {
-                            "title": "{{AI}}视频编辑",
-                            "text": "学习使用AI工具来提升我的视频。"
-                        }
-                    }
-                },
-                {
-                    "id": 2,
-                    "faIcon": "fa-solid fa-palette",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "label": null,
-                    "link": {"href": null, "tooltipString": null},
-                    "copyToClipboardButton": false,
-                    "locales": {
-                        "en": {
-                            "title": "{{Arts}} & Illustration",
-                            "text": "Practicing digital art and exploring new styles."
-                        },
-                        "zh": {
-                            "title": "{{艺术}}与插画",
-                            "text": "练习数字艺术并探索新的风格。"
-                        }
-                    }
-                },
-                {
-                    "id": 3,
                     "faIcon": "fa-solid fa-chart-line",
                     "faIconColors": {"bg": "", "fill": ""},
                     "label": null,
@@ -225,63 +101,63 @@
                             "text": "Learning the basics of stocks and personal finance."
                         },
                         "zh": {
-                            "title": "{{投资}}与金融",
-                            "text": "学习股票和个人理财的基础知识。"
+                            "title": "{{投資}}與財務",
+                            "text": "學習股票和個人理財的基礎知識。"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-solid fa-film",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{Movie}} Appreciation",
+                            "text": "Loving science fiction and action movies, filled with futuristic imagination."
+                        },
+                        "zh": {
+                            "title": "{{電影}}欣賞",
+                            "text": "喜歡觀賞科幻以及動作片，充滿未來感的想像。"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fas fa-plane",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{Travel}} & Life",
+                            "text": "Exploring new cultures and languages through travels to different countries."
+                        },
+                        "zh": {
+                            "title": "{{旅行}}與生活",
+                            "text": "透過不同國家的旅行，探索新的文化和語言。"
                         }
                     }
                 },
                 {
                     "id": 4,
-                    "faIcon": "fa-solid fa-window-restore",
+                    "faIcon": "fa-solid fa-dumbbell",
                     "faIconColors": {"bg": "", "fill": ""},
                     "label": null,
                     "link": {"href": null, "tooltipString": null},
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {
-                            "title": "{{UX}} design",
-                            "text": "Studying user experience principles."
+                            "title": "{{Sports}} & Fitness",
+                            "text": "Engaging in table tennis and fitness activities during leisure time to maintain physical and mental health."
                         },
                         "zh": {
-                            "title": "{{UX}}设计",
-                            "text": "研究用户体验原则。"
-                        }
-                    }
-                },
-                {
-                    "id": 5,
-                    "img": "",
-                    "faIcon": "fa-solid fa-camera-retro",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "label": null,
-                    "link": {"href": null, "tooltipString": null},
-                    "copyToClipboardButton": false,
-                    "locales": {
-                        "en": {
-                            "title": "{{Photography}} & Photoshop",
-                            "text": "Enhancing photos through creative editing techniques."
-                        },
-                        "zh": {
-                            "title": "{{摄影}}与Photoshop",
-                            "text": "通过创意编辑技术提升照片质量。"
-                        }
-                    }
-                },
-                {
-                    "id": 6,
-                    "faIcon": "fa-solid fa-drum-steelpan",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "label": null,
-                    "link": {"href": null, "tooltipString": null},
-                    "copyToClipboardButton": false,
-                    "locales": {
-                        "en": {
-                            "title": "Playing {{drums}}",
-                            "text": "Exploring different genres and improving my skills."
-                        },
-                        "zh": {
-                            "title": "打{{鼓}}",
-                            "text": "探索不同的音乐风格并提升我的技能。"
+                            "title": "運動與{{健身}}",
+                            "text": "休閒時間從事桌球與健身運動，保持身心健康。"
                         }
                     }
                 }
