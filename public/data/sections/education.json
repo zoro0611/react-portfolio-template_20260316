@@ -45,8 +45,8 @@
                         },
                         "zh": {
                             "title": "C# 開發 {{Build School}}",
-                            "province": "",
-                            "country": "",
+                            "province": "台北",
+                            "country": "台灣",
                             "institution": "Build School",
                             "text": "成功完成了一個强化的全端課程，重點是 [[C# 開發]]，在建構動態和可擴展的網絡應用程序方面獲得了全面的實踐經驗。",
                             "list": [],
