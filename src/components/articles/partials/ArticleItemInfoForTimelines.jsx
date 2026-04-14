@@ -47,6 +47,9 @@ function ArticleItemInfoForTimelinesHeader({ itemWrapper, className = "", dateIn
 
     const propListItems = []
 
+    const language = useLanguage() // 引入語系
+    const currentText = language.getString("current") || "Current" // 取得「至今」的翻譯
+
     // Case 1 - The date is being displayed as a badge (no need to display it here).
     if (shouldShowDateBadge) {
         if(institution) {
@@ -68,10 +71,15 @@ function ArticleItemInfoForTimelinesHeader({ itemWrapper, className = "", dateIn
 
     // Case 2 - Must display date inside the prop list.
     else {
+        //Leo新增: 判斷是否有結束日期，若無則使用「至今」
+        const endDate = itemWrapper.dateEndDisplay ? itemWrapper.dateEndDisplay : currentText;
+
         propListItems.push({
             faIcon: `fa-regular fa-clock`,
             type: dateInterval ? PropListItem.Types.INTERVAL : PropListItem.Types.SINGLE,
-            value: dateInterval ? [itemWrapper.dateStartDisplay, itemWrapper.dateEndDisplay] : [itemWrapper.dateStartDisplay]
+            //value: dateInterval ? [itemWrapper.dateStartDisplay, itemWrapper.dateEndDisplay] : [itemWrapper.dateStartDisplay]
+            //Leo新增: 若dateInterval為true，則顯示開始日期和結束日期（結束日期若不存在則顯示「至今」）；若dateInterval為false，則只顯示開始日期
+            value: dateInterval ? [itemWrapper.dateStartDisplay, endDate] : [itemWrapper.dateStartDisplay]
         })
 
         if(institution || location) {
@@ -91,7 +99,8 @@ function ArticleItemInfoForTimelinesHeader({ itemWrapper, className = "", dateIn
 
                 {shouldShowDateBadge && (
                     <DateBadge dateStart={itemWrapper.dateStartDisplay}
-                               dateEnd={dateInterval ? itemWrapper.dateEndDisplay : null}
+                               //dateEnd={dateInterval ? itemWrapper.dateEndDisplay : null}
+                               dateEnd={dateInterval ? (itemWrapper.dateEndDisplay || currentText) : null}
                                variant={DateBadge.Variants.DEFAULT}
                                className={`article-timeline-item-info-for-timelines-header-date-badge`}/>
                 )}
