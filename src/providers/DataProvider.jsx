@@ -71,7 +71,16 @@ function DataProvider({ children, settings }) {
         const jSections = await utils.file.loadJSON("/data/sections.json")
 
         const categories = jCategories.categories
-        const sections = jSections.sections
+
+        /*
+        20260414
+        1. sections.json中的section物件新增visible屬性，預設為true
+        2. DataProvider在載入sections.json後，過濾掉visible屬性為false的section，這樣就不會載入這些section的資料，也不會在前端顯示這些section
+
+        原始的code //const sections = jSections.sections
+        */ 
+        const sections = jSections.sections.filter(section => section.visible !== false)
+
         _bindCategoriesAndSections(categories, sections)
         await _loadSectionsData(sections)
 

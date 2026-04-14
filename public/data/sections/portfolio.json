@@ -41,8 +41,39 @@
                 "order_items_sort": "asc"
             },
             "items": [
-                {
+                                {
                     "id": 1,
+                    "categoryId": "category_apps",
+                    "img": "images/pictures/portfolio-project-logo-rapidlowcode.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://app.appsmith.com/app/business-cards-request/table-edit-69bb4cb5b5f24f5fb91e9862", "tooltipString": "see_on_app_smith", "faIcon": "fa-solid fa-globe"}
+                        ],
+                        "screenshots": [
+                            "images/pictures/screenshot-demo-powerapps-1.jpg",
+                            "images/pictures/screenshot-demo-powerapps-2.jpg",
+                            "images/pictures/screenshot-demo-powerapps-3.jpg"
+                        ],
+                        "screenshotsAspectRatio": "16:9"
+                        
+                    },
+                    "locales": {
+                        "en": {
+                        "title": "Agile Enterprise Solutions: Rapid Low-Code Development",
+                        "text": "Empowering business operations through rapid internal system development using <b>Low-code</b> platforms (<b>Appsmith / PowerApps</b>). Developed robust enterprise-grade applications with minimal IT resources, focusing on streamlining workflows, automated data management, and swift deployment to meet urgent business needs.",
+                        "tags": ["Low-code", "PowerApps", "Appsmith", "Rapid Development"]
+                        },
+                        "zh": {
+                        "title": "企業敏捷開發方案：高效低程式碼系統",
+                        "text": "專注於在有限的 IT 人力資源下，利用 <b>Low-code</b> 平台（如 <b>Appsmith</b>、<b>PowerApps</b>）快速開發企業內部系統。透過標準化組件與RPA流程自動化，實現業務需求的極速交付，涵蓋表單審核與數據管理，有效提升組織營運效率。",
+                        "tags": ["低程式碼開發", "PowerApps", "Appsmith", "快速開發"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
                     "categoryId": "category_utilities",
                     "img": "images/pictures/portfolio-project-logo-linebot.png",
                     "faIcon": "",
@@ -74,38 +105,8 @@
                         "tags": ["Redis", "n8n", "SerpAPI", "影像辨識", "大型語言模型"]
                         }
                     }
-                },
-                {
-                    "id": 2,
-                    "categoryId": "category_apps",
-                    "img": "images/pictures/portfolio-project-logo-rapidlowcode.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "preview": {
-                        "links": [
-                            {"href": "https://app.appsmith.com/app/business-cards-request/table-edit-69bb4cb5b5f24f5fb91e9862", "tooltipString": "see_on_app_smith", "faIcon": "fa-solid fa-globe"}
-                        ],
-                        "screenshots": [
-                            "images/pictures/screenshot-demo-powerapps-1.jpg",
-                            "images/pictures/screenshot-demo-powerapps-2.jpg",
-                            "images/pictures/screenshot-demo-powerapps-3.jpg"
-                        ],
-                        "screenshotsAspectRatio": "16:9"
-                        
-                    },
-                    "locales": {
-                        "en": {
-                        "title": "Agile Enterprise Solutions: Rapid Low-Code Development",
-                        "text": "Empowering business operations through rapid internal system development using <b>Low-code</b> platforms (<b>Appsmith / PowerApps</b>). Developed robust enterprise-grade applications with minimal IT resources, focusing on streamlining workflows, automated data management, and swift deployment to meet urgent business needs.",
-                        "tags": ["Low-code", "PowerApps", "Appsmith", "Rapid Development"]
-                        },
-                        "zh": {
-                        "title": "企業敏捷開發方案：高效低程式碼系統構建",
-                        "text": "專注於在有限的 IT 人力資源下，利用 <b>Low-code</b> 平台（如 <b>Appsmith</b>、<b>PowerApps</b>）快速開發企業內部系統。透過標準化組件與流程自動化，實現業務需求的極速交付，涵蓋表單審核與數據管理，有效提升組織營運效率。",
-                        "tags": ["低程式碼開發", "PowerApps", "Appsmith", "快速開發"]
-                        }
-                    }
                 }
+
             ]
         }
     ]
