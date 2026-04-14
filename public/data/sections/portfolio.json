@@ -44,69 +44,65 @@
                 {
                     "id": 1,
                     "categoryId": "category_utilities",
-                    "img": "images/pictures/portfolio-project-logo-3.png",
+                    "img": "images/pictures/portfolio-project-logo-linebot.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "preview": {
                         "links": [
-                            {"href": "https://github.com", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"},
-                            {"href": "https://npm.com", "tooltipString": "see_on_npm", "faIcon": "fa-brands fa-npm"}
+                        {
+                            "href": "https://line.me/ti/p/@412cgkrw",
+                            "tooltipString": "add_on_line",
+                            "faIcon": "fa-brands fa-line"
+                        }
                         ],
                         "screenshots": [
-                            "images/pictures/screenshot-demo-landscape-1.png",
-                            "images/pictures/screenshot-demo-landscape-2.png",
-                            "images/pictures/screenshot-demo-landscape-3.png",
-                            "images/pictures/screenshot-demo-landscape-4.png",
-                            "images/pictures/screenshot-demo-landscape-5.png"
+                            "images/pictures/screenshot-demo-linebot-2.jpg",
+                            "images/pictures/screenshot-demo-linebot-1.jpg",
+                            "images/pictures/screenshot-demo-linebot-3.jpg"
                         ],
-                        "screenshotsAspectRatio": "16:9",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=PnV8p1xm7-o"
+                        "screenshotsAspectRatio": "16:9"
                     },
                     "locales": {
                         "en": {
-                            "title": "BrainPulse",
-                            "text": "A <b>RESTful API</b> backend built with <b>Node.js</b>, designed for high-performance data processing and real-time event handling.",
-                            "tags": ["API", "REST", "Backend"]
+                        "title": "AI-Driven Multi-Modal Agent",
+                        "text": "An advanced LINE Bot powered by <b>n8n</b> automation. It features <b>Redis Chat Memory</b> for long-term context, <b>GPT-4o</b> for reasoning, and <b>Image Recognition</b> for visual analysis. It integrates <b>SerpAPI</b> for real-time web search, providing accurate and up-to-date responses via structured API orchestration.",
+                        "tags": ["Redis", "n8n", "SerpAPI", "Image Analysis", "LLM"]
                         },
                         "zh": {
-                            "title": "BrainPulse",
-                            "text": "一個使用 <b>Node.js</b> 建構的 <b>RESTful API</b> 後端，旨在實現高性能數據處理和RealTime事件處理。",
-                            "tags": ["API", "REST", "後端"]
+                        "title": "AI 多型態智能助理",
+                        "text": "基於 <b>n8n</b> 自動化流程架構的進階 LINE 機器人。核心技術包含使用 <b>Redis Chat Memory</b> 實現持久化對話記憶，並整合 <b>GPT-4o</b> 影像辨識處理圖文需求。特別導入 <b>SerpAPI</b> 聯網搜尋技術，使機器人能獲取即時資訊並透過精準的 API 調度提供準確回覆。",
+                        "tags": ["Redis", "n8n", "SerpAPI", "影像辨識", "大型語言模型"]
                         }
                     }
                 },
                 {
                     "id": 2,
                     "categoryId": "category_apps",
-                    "img": "images/pictures/portfolio-project-logo-7.png",
+                    "img": "images/pictures/portfolio-project-logo-rapidlowcode.png",
                     "faIcon": "",
                     "faIconColors": {"bg": "", "fill": ""},
                     "preview": {
                         "links": [
-                            {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
-                            {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
+                            {"href": "https://app.appsmith.com/app/business-cards-request/table-edit-69bb4cb5b5f24f5fb91e9862", "tooltipString": "see_on_app_smith", "faIcon": "fa-solid fa-globe"}
                         ],
                         "screenshots": [
-                            "images/pictures/screenshot-demo-portrait-1.png",
-                            "images/pictures/screenshot-demo-portrait-2.png",
-                            "images/pictures/screenshot-demo-portrait-3.png",
-                            "images/pictures/screenshot-demo-portrait-4.png",
-                            "images/pictures/screenshot-demo-portrait-5.png",
-                            "images/pictures/screenshot-demo-portrait-6.png"
+                            "images/pictures/screenshot-demo-powerapps-1.jpg",
+                            "images/pictures/screenshot-demo-powerapps-2.jpg",
+                            "images/pictures/screenshot-demo-powerapps-3.jpg"
                         ],
-                        "screenshotsAspectRatio": "9:16",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=TfgBHC5gvTI"
+                        "screenshotsAspectRatio": "16:9"
+                        
                     },
                     "locales": {
                         "en": {
-                            "title": "MailM8",
-                            "text": "A cross-platform email client built with <b>Flutter</b>, providing efficient communication with an intuitive UI for <b>managing emails</b>.",
-                            "tags": ["Flutter", "E-mail", "Communication"]
+                        "title": "Agile Enterprise Solutions: Rapid Low-Code Development",
+                        "text": "Empowering business operations through rapid internal system development using <b>Low-code</b> platforms (<b>Appsmith / PowerApps</b>). Developed robust enterprise-grade applications with minimal IT resources, focusing on streamlining workflows, automated data management, and swift deployment to meet urgent business needs.",
+                        "tags": ["Low-code", "PowerApps", "Appsmith", "Rapid Development"]
                         },
                         "zh": {
-                            "title": "MailM8",
-                            "text": "一個使用 <b>Flutter</b> 建構的跨平台電子郵件客戶端，提供高效的通訊和直觀的用戶界面來 <b>管理電子郵件</b>。",
-                            "tags": ["Flutter", "電子郵件", "通訊"]
+                        "title": "企業敏捷開發方案：高效低程式碼系統構建",
+                        "text": "專注於在有限的 IT 人力資源下，利用 <b>Low-code</b> 平台（如 <b>Appsmith</b>、<b>PowerApps</b>）快速開發企業內部系統。透過標準化組件與流程自動化，實現業務需求的極速交付，涵蓋表單審核與數據管理，有效提升組織營運效率。",
+                        "tags": ["低程式碼開發", "PowerApps", "Appsmith", "快速開發"]
                         }
                     }
                 }
