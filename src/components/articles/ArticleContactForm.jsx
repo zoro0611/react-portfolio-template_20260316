@@ -148,8 +148,8 @@ function ArticleContactFormContent({ dataWrapper, selectedItemCategoryId, setSho
             apiResponse = await api.handlers.dummyRequest()
         }*/
 
-        //n8n Webhook 的 URL，請替換成自己的 n8n Webhook URL
-        const n8nWebhookUrl = "https://mangoisyellow-n8n-free.hf.space/webhook/3eee3ecb-6c8c-40c8-8324-dea604d6d3e5";
+        //n8n Webhook 的 URL，請在 .env 設定 VITE_N8N_WEBHOOK_URL
+        const n8nWebhookUrl = import.meta.env.VITE_N8N_WEBHOOK_URL;
 
         let apiResponse;
         

@@ -22,4 +22,8 @@ dist/
 *.njsproj
 *.sln
 *.sw?
-*.sublime-workspace
+*.sublime-workspace-e 
+# 環境變數（含 Supabase Key，禁止 commit）
+.env
+.env.local
+.env.*.local
