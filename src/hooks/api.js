@@ -182,12 +182,12 @@ const analytics = {
             let ip = null
 
             try {
-                const geoRes = await fetch("https://ip-api.com/json/?fields=status,country,city,query")
+                const geoRes = await fetch("https://ipinfo.io/json")
                 const geoData = await geoRes.json()
-                if (geoData.status === "success") {
-                    country = geoData.country || null
+                if (geoData.ip) {
+                    ip = geoData.ip || null
                     city = geoData.city || null
-                    ip = geoData.query || null
+                    country = geoData.country || null
                 }
             } catch (_) {
                 // 地理位置抓不到也沒關係，繼續寫入其他資料
@@ -195,7 +195,7 @@ const analytics = {
 
             // ── 3. 組合 payload ────────────────────────────────────────────
             const payload = {
-                visited_at: new Date().toISOString(),
+                visited_at: new Date().toLocaleString("sv-SE", { timeZone: "Asia/Taipei" }).replace(" ", "T") + "+08:00",
                 ip: ip,
                 country: country,
                 city: city,
