@@ -64,6 +64,9 @@
             "subject": "Subject",
             "toggle_sidebar": "Toggle sidebar",
             "watch_video": "Watch Video",
+            "visitor_stats": "Visitor Stats",
+            "visitor_stats_total_label": "visits",
+            "visitor_stats_badge_format": "{n} visits",
             "yes": "Yes"
         },
         "zh": {
@@ -130,6 +133,9 @@
             "subject": "主題",
             "toggle_sidebar": "切換側邊欄",
             "watch_video": "觀看影片",
+            "visitor_stats": "訪客統計",
+            "visitor_stats_total_label": "次造訪",
+            "visitor_stats_badge_format": "{n} 次造訪",
             "yes": "是"
         },
         "fr": {
@@ -195,6 +201,9 @@
             "subject": "Sujet",
             "toggle_sidebar": "Basculer la barre latérale",
             "watch_video": "Regarder la vidéo",
+            "visitor_stats": "Statistiques des visiteurs",
+            "visitor_stats_total_label": "visites",
+            "visitor_stats_badge_format": "{n} visites",
             "yes": "Oui"
         },
         "ko": {
@@ -260,6 +269,9 @@
             "subject": "제목",
             "toggle_sidebar": "사이드바 전환",
             "watch_video": "비디오 보기",
+            "visitor_stats": "방문자 통계",
+            "visitor_stats_total_label": "방문",
+            "visitor_stats_badge_format": "{n}회 방문",
             "yes": "예"
         }
     }

@@ -2,8 +2,10 @@ import "./VisitorStatsModal.scss"
 import React, { useState } from 'react'
 import { ModalWrapper, ModalWrapperTitle, ModalWrapperBody } from '/src/components/modals/base/ModalWrapper'
 import NumberAnimation from '/src/components/generic/NumberAnimation.jsx'
+import { useLanguage } from '/src/providers/LanguageProvider.jsx'
 
 function VisitorStatsModal({ stats, onDismiss }) {
+    const language = useLanguage()
     const [shouldDismiss, setShouldDismiss] = useState(false)
 
     const total = stats?.total || 0
@@ -27,7 +29,7 @@ function VisitorStatsModal({ stats, onDismiss }) {
                       shouldDismiss={shouldDismiss}
                       onDismiss={onDismiss}
                       dialogClassName="modal-dialog-centered">
-            <ModalWrapperTitle title="訪客統計"
+            <ModalWrapperTitle title={language.getString("visitor_stats")}
                                faIcon="fa-regular fa-eye"
                                onClose={_onClose}/>
             <ModalWrapperBody className="visitor-stats-modal-body">
@@ -36,7 +38,7 @@ function VisitorStatsModal({ stats, onDismiss }) {
                     <NumberAnimation id="visitor-stats-total"
                                      targetValue={total}
                                      className="visitor-stats-total-number"/>
-                    <span className="visitor-stats-total-label">次造訪</span>
+                    <span className="visitor-stats-total-label">{language.getString("visitor_stats_total_label")}</span>
                 </div>
 
                 {byCountry.length > 0 && (

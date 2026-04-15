@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom'
 import NumberAnimation from '/src/components/generic/NumberAnimation.jsx'
 import VisitorStatsModal from '/src/components/modals/VisitorStatsModal.jsx'
 import { useVisitorStats } from '/src/hooks/useVisitorStats.js'
+import { useLanguage } from '/src/providers/LanguageProvider.jsx'
 
 function NavVisitorCounter({ expanded }) {
+    const language = useLanguage()
     const { stats, loading } = useVisitorStats()
     const [showModal, setShowModal] = useState(false)
 
@@ -17,7 +19,7 @@ function NavVisitorCounter({ expanded }) {
                 <i className="fa-regular fa-eye"/>
                 <NumberAnimation id="visitor-counter-badge"
                                  targetValue={stats.total}
-                                 format="{n} visits"/>
+                                 format={language.getString("visitor_stats_badge_format")}/>
                 <i className="fa-solid fa-chevron-right nav-visitor-counter-arrow"/>
             </div>
 
