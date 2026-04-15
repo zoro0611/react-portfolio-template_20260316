@@ -13,6 +13,10 @@ const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY
  * @returns {Promise<{success: boolean, error: any}>}
  */
 export const insertVisitorLog = async (payload) => {
+    if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+        return { success: false, error: "Supabase 環境變數未設定" }
+    }
+
     try {
         const response = await fetch(`${SUPABASE_URL}/rest/v1/visitor_logs`, {
             method: "POST",
