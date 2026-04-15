@@ -8,6 +8,7 @@ import ImageView from "/src/components/generic/ImageView.jsx"
 import StatusCircle from "/src/components/generic/StatusCircle.jsx"
 import TextTyper from "/src/components/generic/TextTyper.jsx"
 import AudioButton from "/src/components/buttons/AudioButton.jsx"
+import NavVisitorCounter from "./NavVisitorCounter.jsx"
 
 function NavProfileCard({ profile, expanded }) {
     const language = useLanguage()
@@ -89,6 +90,8 @@ function NavProfileCard({ profile, expanded }) {
                          dangerouslySetInnerHTML={{__html: roles[0]}}/>
                 )}
             </div>
+
+            <NavVisitorCounter expanded={expanded}/>
         </Card>
     )
 }

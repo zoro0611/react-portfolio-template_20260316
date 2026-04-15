@@ -1,0 +1,89 @@
+@import "/src/styles/extend.scss";
+
+.visitor-stats-modal-body {
+    padding: 1.5rem;
+}
+
+.visitor-stats-total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 1rem 0 1.25rem;
+    border-bottom: 1px solid var(--theme-standard-borders);
+    margin-bottom: 1.25rem;
+
+    .visitor-stats-total-icon {
+        font-size: 1.1rem;
+        color: var(--theme-primary);
+    }
+
+    .visitor-stats-total-number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--theme-primary);
+        line-height: 1;
+    }
+
+    .visitor-stats-total-label {
+        font-size: 0.9rem;
+        color: var(--theme-secondary);
+        align-self: flex-end;
+        padding-bottom: 3px;
+    }
+}
+
+.visitor-stats-table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 380px;
+    overflow-y: auto;
+}
+
+.visitor-stats-row {
+    display: grid;
+    grid-template-columns: 22px 1fr 100px 36px 40px;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+
+    .visitor-stats-flag {
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .visitor-stats-country {
+        color: var(--theme-texts);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .visitor-stats-bar-wrap {
+        height: 6px;
+        background-color: var(--theme-boards-background-accent);
+        border-radius: 3px;
+        overflow: hidden;
+
+        .visitor-stats-bar {
+            height: 100%;
+            background-color: var(--theme-primary);
+            border-radius: 3px;
+            transition: width 0.6s ease;
+            min-width: 2px;
+        }
+    }
+
+    .visitor-stats-count {
+        text-align: right;
+        color: var(--theme-secondary);
+        font-size: 0.8rem;
+    }
+
+    .visitor-stats-pct {
+        text-align: right;
+        color: var(--theme-secondary);
+        font-size: 0.8rem;
+    }
+}
