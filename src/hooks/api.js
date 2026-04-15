@@ -195,7 +195,7 @@ const analytics = {
 
             // ── 3. 組合 payload ────────────────────────────────────────────
             const payload = {
-                visited_at: new Date().toLocaleString("sv-SE", { timeZone: "Asia/Taipei" }).replace(" ", "T") + "+08:00",
+                visited_at: new Date().toLocaleString("sv-SE", { timeZone: "Asia/Taipei" }).replace(" ", "T"),
                 ip: ip,
                 country: country,
                 city: city,
