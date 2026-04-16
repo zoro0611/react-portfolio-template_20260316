@@ -22,20 +22,23 @@ function VisitorStatsModal({ stats, onDismiss }) {
         VN: 'Vietnam', PH: 'Philippines', IN: 'India', AU: 'Australia', NZ: 'New Zealand',
     }
 
-    const getFlag = (countryCode) => {
-        if (!countryCode || countryCode === '—') return '🌐'
-        try {
-            return countryCode.toUpperCase().replace(/./g, char =>
-                String.fromCodePoint(127397 + char.charCodeAt())
-            )
-        } catch {
-            return '🌐'
-        }
-    }
-
     const getCountryName = (code) => {
         if (!code || code === '—') return '未知地區'
         return COUNTRY_NAMES[code.toUpperCase()] || code
+    }
+
+    const FlagImage = ({ code }) => {
+        if (!code || code === '—') return <span style={{ fontSize: '1rem', lineHeight: 1 }}>🌐</span>
+        return (
+            <img
+                src={`https://flagcdn.com/20x15/${code.toLowerCase()}.png`}
+                srcSet={`https://flagcdn.com/40x30/${code.toLowerCase()}.png 2x`}
+                width="20"
+                height="15"
+                alt={code}
+                style={{ objectFit: 'cover', borderRadius: '2px', display: 'block' }}
+            />
+        )
     }
 
     return (
@@ -61,7 +64,7 @@ function VisitorStatsModal({ stats, onDismiss }) {
                             const pct = Math.round(count / total * 100)
                             return (
                                 <div key={country} className="visitor-stats-row">
-                                    <span className="visitor-stats-flag">{getFlag(country)}</span>
+                                    <span className="visitor-stats-flag"><FlagImage code={country}/></span>
                                     <span className="visitor-stats-country">{getCountryName(country)}</span>
                                     <div className="visitor-stats-bar-wrap">
                                         <div className="visitor-stats-bar" style={{ width: `${pct}%` }}/>
