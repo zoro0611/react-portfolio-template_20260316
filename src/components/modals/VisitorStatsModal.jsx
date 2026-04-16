@@ -13,6 +13,15 @@ function VisitorStatsModal({ stats, onDismiss }) {
 
     const _onClose = () => setShouldDismiss(true)
 
+    const COUNTRY_NAMES = {
+        TW: '台灣', JP: '日本', CN: '中國', HK: '香港', KR: '韓國',
+        US: 'United States', CA: 'Canada', MX: 'Mexico', BR: 'Brazil', AR: 'Argentina',
+        GB: 'United Kingdom', DE: 'Germany', FR: 'France', IT: 'Italy', ES: 'Spain',
+        NL: 'Netherlands', SE: 'Sweden', NO: 'Norway', CH: 'Switzerland',
+        SG: 'Singapore', MY: 'Malaysia', ID: 'Indonesia', TH: 'Thailand',
+        VN: 'Vietnam', PH: 'Philippines', IN: 'India', AU: 'Australia', NZ: 'New Zealand',
+    }
+
     const getFlag = (countryCode) => {
         if (!countryCode || countryCode === '—') return '🌐'
         try {
@@ -22,6 +31,11 @@ function VisitorStatsModal({ stats, onDismiss }) {
         } catch {
             return '🌐'
         }
+    }
+
+    const getCountryName = (code) => {
+        if (!code || code === '—') return '未知地區'
+        return COUNTRY_NAMES[code.toUpperCase()] || code
     }
 
     return (
@@ -48,7 +62,7 @@ function VisitorStatsModal({ stats, onDismiss }) {
                             return (
                                 <div key={country} className="visitor-stats-row">
                                     <span className="visitor-stats-flag">{getFlag(country)}</span>
-                                    <span className="visitor-stats-country">{country || '—'}</span>
+                                    <span className="visitor-stats-country">{getCountryName(country)}</span>
                                     <div className="visitor-stats-bar-wrap">
                                         <div className="visitor-stats-bar" style={{ width: `${pct}%` }}/>
                                     </div>
