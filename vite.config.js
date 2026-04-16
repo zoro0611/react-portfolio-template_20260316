@@ -1,10 +1,23 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
+
+const watchPublicData = {
+    name: 'watch-public-data',
+    configureServer(server) {
+        server.watcher.add(path.resolve(__dirname, 'public/**/*.json'))
+        server.watcher.on('change', (file) => {
+            if (file.includes(`${path.sep}public${path.sep}`)) {
+                server.ws.send({ type: 'full-reload' })
+            }
+        })
+    }
+}
 
 // https://vitejs.dev/config/
 export default defineConfig({
     base: '/',
-    plugins: [react()],
+    plugins: [react(), watchPublicData],
     build: {
         rollupOptions: {
             output: {

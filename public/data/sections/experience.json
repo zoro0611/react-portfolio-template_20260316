@@ -68,17 +68,25 @@
                             "province": "XinYi District",
                             "country": "Taipei City",
                             "institution": "Lotus Pharmaceutical Co., Ltd.",
-                            "text": "Led the transformation of the NewType legacy BPM system, utilizing Power Platform to integrate .NET C# with SAP/SQL data, achieving cross-platform data automation and process optimization.",
-                            "list": [],
+                            "text": "Focused on [[enterprise BPM automation and RPA system integration]], leading a platform migration from NewType to PowerApps, interfacing with SAP, HR, and other backend systems for ~[[1,500 internal users]] across multiple countries.",
+                            "list": [
+                                "Maintained both systems concurrently during transition with [[zero business disruption]]",
+                                "Supported onboarding of interns and new colleagues on internal development workflows",
+                                "Reduced per-form cost from [[NT$100K + 2 weeks (vendor)]] to [[3–4 forms/month]] independently"
+                            ],
                             "tags": ["PowerApps","Power Automate","MSSQL", "C#", "jQuery", "REST APIs","SAP RFC "]
-                        } ,
+                        },
                         "zh": {
                             "title": "{{全端}} IT高級專員",
                             "province": "信義區",
                             "country": "台北市",
                             "institution": "美時製藥股份有限公司",
-                            "text": "主導 [[NewType 舊有 BPM 系統轉型]]，運用 Power Platform 整合 .NET C# 與 SAP/SQL 資料，實現[[跨平台資料自動化與流程優化。]]",
-                            "list": [],
+                            "text": "負責[[企業 BPM 流程自動化與 RPA 系統串接]]，主導平台從 NewType 遷移至 PowerApps，串接 SAP、HR 等後端系統資料，覆蓋多國約 [[1,500 位]]內部使用者。",
+                            "list": [
+                                "轉型期間同時維運雙系統並持續開發，確保業務[[零中斷]]",
+                                "協助帶領實習生與新進同事熟悉開發流程",
+                                "表單開發從[[廠商報價 10 萬 ＋ 2 週]]縮短至自行[[每月產出 3–4 張]]"
+                            ],
                             "tags": ["PowerApps","Power Automate","MSSQL", "C#", "jQuery", "REST APIs","SAP RFC "]
                         }
                         
