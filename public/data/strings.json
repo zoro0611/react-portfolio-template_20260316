@@ -67,6 +67,7 @@
             "visitor_stats": "Visitor Stats",
             "visitor_stats_total_label": "visits",
             "visitor_stats_badge_format": "{n} visits",
+            "visitor_stats_unknown": "Unknown",
             "yes": "Yes"
         },
         "zh": {
@@ -136,6 +137,7 @@
             "visitor_stats": "訪客統計",
             "visitor_stats_total_label": "次造訪",
             "visitor_stats_badge_format": "{n} 次造訪",
+            "visitor_stats_unknown": "未知地區",
             "yes": "是"
         },
         "fr": {
@@ -204,6 +206,7 @@
             "visitor_stats": "Statistiques des visiteurs",
             "visitor_stats_total_label": "visites",
             "visitor_stats_badge_format": "{n} visites",
+            "visitor_stats_unknown": "Inconnu",
             "yes": "Oui"
         },
         "ko": {
@@ -272,6 +275,7 @@
             "visitor_stats": "방문자 통계",
             "visitor_stats_total_label": "방문",
             "visitor_stats_badge_format": "{n}회 방문",
+            "visitor_stats_unknown": "알 수 없음",
             "yes": "예"
         }
     }
