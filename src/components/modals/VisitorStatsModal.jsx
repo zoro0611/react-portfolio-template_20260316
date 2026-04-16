@@ -9,7 +9,13 @@ function VisitorStatsModal({ stats, onDismiss }) {
     const [shouldDismiss, setShouldDismiss] = useState(false)
 
     const total = stats?.total || 0
-    const byCountry = stats?.by_country || []
+    const byCountry = [...(stats?.by_country || [])].sort((a, b) => {
+        const aUnknown = !a.country || a.country === '—'
+        const bUnknown = !b.country || b.country === '—'
+        if (aUnknown && !bUnknown) return 1
+        if (!aUnknown && bUnknown) return -1
+        return 0
+    })
 
     const _onClose = () => setShouldDismiss(true)
 
